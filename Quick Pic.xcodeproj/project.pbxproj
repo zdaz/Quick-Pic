@@ -19,6 +19,20 @@
 		F50874A01888B6680042322B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50874881888B6680042322B /* UIKit.framework */; };
 		F50874A81888B6680042322B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F50874A61888B6680042322B /* InfoPlist.strings */; };
 		F50874AA1888B6680042322B /* Quick_PicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F50874A91888B6680042322B /* Quick_PicTests.m */; };
+		F50874B41888B6DE0042322B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F50874B31888B6DE0042322B /* MainStoryboard.storyboard */; };
+		F50874C81888C8420042322B /* InboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F50874C71888C8420042322B /* InboxViewController.m */; };
+		F50874CA1889B2E40042322B /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50874C91889B2E40042322B /* Parse.framework */; };
+		F50874D41889B3980042322B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50874CB1889B3970042322B /* AudioToolbox.framework */; };
+		F50874D51889B3980042322B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50874CC1889B3970042322B /* CFNetwork.framework */; };
+		F50874D61889B3980042322B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50874CD1889B3970042322B /* CoreLocation.framework */; };
+		F50874D71889B3980042322B /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F50874CE1889B3970042322B /* libz.1.1.3.dylib */; };
+		F50874D81889B3980042322B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50874CF1889B3980042322B /* MobileCoreServices.framework */; };
+		F50874D91889B3980042322B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50874D01889B3980042322B /* QuartzCore.framework */; };
+		F50874DA1889B3980042322B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50874D11889B3980042322B /* Security.framework */; };
+		F50874DB1889B3980042322B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50874D21889B3980042322B /* StoreKit.framework */; };
+		F50874DC1889B3980042322B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50874D31889B3980042322B /* SystemConfiguration.framework */; };
+		F50874E2188A6D390042322B /* ZDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F50874E1188A6D390042322B /* ZDLoginViewController.m */; };
+		F50874E5188A6D470042322B /* ZDSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F50874E4188A6D470042322B /* ZDSignUpViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +62,23 @@
 		F50874A51888B6680042322B /* Quick PicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Quick PicTests-Info.plist"; sourceTree = "<group>"; };
 		F50874A71888B6680042322B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F50874A91888B6680042322B /* Quick_PicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Quick_PicTests.m; sourceTree = "<group>"; };
+		F50874B31888B6DE0042322B /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		F50874C61888C8420042322B /* InboxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InboxViewController.h; sourceTree = "<group>"; };
+		F50874C71888C8420042322B /* InboxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InboxViewController.m; sourceTree = "<group>"; };
+		F50874C91889B2E40042322B /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		F50874CB1889B3970042322B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F50874CC1889B3970042322B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		F50874CD1889B3970042322B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F50874CE1889B3970042322B /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		F50874CF1889B3980042322B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		F50874D01889B3980042322B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F50874D11889B3980042322B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F50874D21889B3980042322B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		F50874D31889B3980042322B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F50874E0188A6D390042322B /* ZDLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZDLoginViewController.h; path = ../ZDLoginViewController.h; sourceTree = "<group>"; };
+		F50874E1188A6D390042322B /* ZDLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZDLoginViewController.m; path = ../ZDLoginViewController.m; sourceTree = "<group>"; };
+		F50874E3188A6D470042322B /* ZDSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZDSignUpViewController.h; path = ../ZDSignUpViewController.h; sourceTree = "<group>"; };
+		F50874E4188A6D470042322B /* ZDSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZDSignUpViewController.m; path = ../ZDSignUpViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +86,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F50874D41889B3980042322B /* AudioToolbox.framework in Frameworks */,
+				F50874D51889B3980042322B /* CFNetwork.framework in Frameworks */,
+				F50874D61889B3980042322B /* CoreLocation.framework in Frameworks */,
+				F50874D71889B3980042322B /* libz.1.1.3.dylib in Frameworks */,
+				F50874D81889B3980042322B /* MobileCoreServices.framework in Frameworks */,
+				F50874D91889B3980042322B /* QuartzCore.framework in Frameworks */,
+				F50874DA1889B3980042322B /* Security.framework in Frameworks */,
+				F50874DB1889B3980042322B /* StoreKit.framework in Frameworks */,
+				F50874DC1889B3980042322B /* SystemConfiguration.framework in Frameworks */,
 				F50874871888B6680042322B /* CoreGraphics.framework in Frameworks */,
 				F50874891888B6680042322B /* UIKit.framework in Frameworks */,
+				F50874CA1889B2E40042322B /* Parse.framework in Frameworks */,
 				F50874851888B6680042322B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -77,6 +118,7 @@
 		F50874781888B6680042322B = {
 			isa = PBXGroup;
 			children = (
+				F50874C51888BF050042322B /* Images */,
 				F508748A1888B6680042322B /* Quick Pic */,
 				F50874A31888B6680042322B /* Quick PicTests */,
 				F50874831888B6680042322B /* Frameworks */,
@@ -96,6 +138,16 @@
 		F50874831888B6680042322B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F50874CB1889B3970042322B /* AudioToolbox.framework */,
+				F50874CC1889B3970042322B /* CFNetwork.framework */,
+				F50874CD1889B3970042322B /* CoreLocation.framework */,
+				F50874CE1889B3970042322B /* libz.1.1.3.dylib */,
+				F50874CF1889B3980042322B /* MobileCoreServices.framework */,
+				F50874D01889B3980042322B /* QuartzCore.framework */,
+				F50874D11889B3980042322B /* Security.framework */,
+				F50874D21889B3980042322B /* StoreKit.framework */,
+				F50874D31889B3980042322B /* SystemConfiguration.framework */,
+				F50874C91889B2E40042322B /* Parse.framework */,
 				F50874841888B6680042322B /* Foundation.framework */,
 				F50874861888B6680042322B /* CoreGraphics.framework */,
 				F50874881888B6680042322B /* UIKit.framework */,
@@ -109,6 +161,12 @@
 			children = (
 				F50874931888B6680042322B /* ZDAppDelegate.h */,
 				F50874941888B6680042322B /* ZDAppDelegate.m */,
+				F50874C61888C8420042322B /* InboxViewController.h */,
+				F50874C71888C8420042322B /* InboxViewController.m */,
+				F50874E0188A6D390042322B /* ZDLoginViewController.h */,
+				F50874E1188A6D390042322B /* ZDLoginViewController.m */,
+				F50874E3188A6D470042322B /* ZDSignUpViewController.h */,
+				F50874E4188A6D470042322B /* ZDSignUpViewController.m */,
 				F50874961888B6680042322B /* Images.xcassets */,
 				F508748B1888B6680042322B /* Supporting Files */,
 			);
@@ -142,6 +200,14 @@
 				F50874A61888B6680042322B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F50874C51888BF050042322B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F50874B31888B6DE0042322B /* MainStoryboard.storyboard */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +286,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F50874B41888B6DE0042322B /* MainStoryboard.storyboard in Resources */,
 				F508748F1888B6680042322B /* InfoPlist.strings in Resources */,
 				F50874971888B6680042322B /* Images.xcassets in Resources */,
 			);
@@ -240,8 +307,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F50874E2188A6D390042322B /* ZDLoginViewController.m in Sources */,
 				F50874951888B6680042322B /* ZDAppDelegate.m in Sources */,
 				F50874911888B6680042322B /* main.m in Sources */,
+				F50874E5188A6D470042322B /* ZDSignUpViewController.m in Sources */,
+				F50874C81888C8420042322B /* InboxViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,9 +430,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Development/Quick\\ Pic/Quick\\ Pic",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Quick Pic/Quick Pic-Prefix.pch";
 				INFOPLIST_FILE = "Quick Pic/Quick Pic-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -373,9 +448,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Development/Quick\\ Pic/Quick\\ Pic",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Quick Pic/Quick Pic-Prefix.pch";
 				INFOPLIST_FILE = "Quick Pic/Quick Pic-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -442,6 +522,7 @@
 				F50874AF1888B6680042322B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F50874B01888B6680042322B /* Build configuration list for PBXNativeTarget "Quick PicTests" */ = {
 			isa = XCConfigurationList;
@@ -450,6 +531,7 @@
 				F50874B21888B6680042322B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,15 +7,19 @@
 //
 
 #import "ZDAppDelegate.h"
+#import <Parse/Parse.h>
 
 @implementation ZDAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+    
+    [Parse setApplicationId:@"FupVUhGsY79fVSrEGhbEnxqJBNTASRHq0pivj6TF"
+                  clientKey:@"0NBARtlRw4Iojr7Kh9ETO7TUicltrUAKPQHBJHzw"];
+    
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
+  
     return YES;
 }
 
