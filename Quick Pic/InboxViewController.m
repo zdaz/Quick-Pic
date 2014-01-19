@@ -20,11 +20,14 @@
 {
     [super viewDidLoad];
     
-    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
-    testObject[@"foo"] = @"bar";
-    [testObject saveInBackground];
-
-    [self performSegueWithIdentifier:@"openLogin" sender:self];
+    PFUser *currentUser = [PFUser currentUser];
+    
+    if (currentUser) {
+        NSLog(@"Current user: %@", currentUser.username);
+    }
+    else {
+        [self performSegueWithIdentifier:@"openLogin" sender:self];
+    }
 }
 
 
@@ -55,5 +58,16 @@
     return cell;
 }
 
+
+- (IBAction)logout:(id)sender {
+    [PFUser logOut];
+    [self performSegueWithIdentifier:@"openLogin" sender:self];
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"openLogin"]) {
+        [segue.destinationViewController setHidesBottomBarWhenPushed:YES];
+    }
+}
 
 @end

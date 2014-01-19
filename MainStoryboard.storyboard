@@ -24,16 +24,16 @@
             </objects>
             <point key="canvasLocation" x="-28" y="94"/>
         </scene>
-        <!--Table View Controller - Quick Pic-->
+        <!--Friends View Controller - Friends-->
         <scene sceneID="Zuq-Ai-dSF">
             <objects>
-                <tableViewController id="9ge-BJ-zQM" sceneMemberID="viewController">
+                <tableViewController id="9ge-BJ-zQM" customClass="ZDFriendsViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="bVc-r6-naE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="tpz-1J-FRh">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="tpz-1J-FRh">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tpz-1J-FRh" id="as1-dB-0lg">
@@ -47,11 +47,46 @@
                             <outlet property="delegate" destination="9ge-BJ-zQM" id="m3j-mV-5jv"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Quick Pic" id="BK0-Ox-fVR"/>
+                    <navigationItem key="navigationItem" title="Friends" id="BK0-Ox-fVR">
+                        <barButtonItem key="rightBarButtonItem" title="Add/Remove" id="Exx-dj-rjq">
+                            <connections>
+                                <segue destination="Q14-LR-F0e" kind="push" id="NQQ-j0-rZa"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ymQ-c5-dcA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1248" y="685"/>
+            <point key="canvasLocation" x="1230" y="685"/>
+        </scene>
+        <!--Edit Friends View Controller - Edit Friends-->
+        <scene sceneID="XG9-v7-mBM">
+            <objects>
+                <tableViewController id="Q14-LR-F0e" customClass="ZDEditFriendsViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Yg6-gO-ehp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="4gv-m2-ji7">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4gv-m2-ji7" id="CwP-zJ-Hu7">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Q14-LR-F0e" id="cQx-6Q-poq"/>
+                            <outlet property="delegate" destination="Q14-LR-F0e" id="eOu-TC-FMr"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Edit Friends" id="Rzl-uH-io0"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i3U-Bz-l48" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1659" y="685"/>
         </scene>
         <!--Inbox View Controller - Quick Pic-->
         <scene sceneID="ORg-NS-bLk">
@@ -76,7 +111,13 @@
                             <outlet property="delegate" destination="cyh-ag-HDL" id="P2w-Md-F0b"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Quick Pic" id="fNS-9M-Ruy"/>
+                    <navigationItem key="navigationItem" title="Quick Pic" id="fNS-9M-Ruy">
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="dr7-hQ-sdi">
+                            <connections>
+                                <action selector="logout:" destination="cyh-ag-HDL" id="vxs-wp-dL1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="JDt-7W-nzc" kind="push" identifier="openLogin" id="rgQ-Pv-WT2"/>
                     </connections>
@@ -140,11 +181,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Quick Pic" id="ee6-YL-ML6"/>
                     <connections>
-                        <outlet property="password" destination="EJ6-IY-9uJ" id="afp-gI-tVK"/>
                         <outlet property="passwordField" destination="EJ6-IY-9uJ" id="osz-Av-8bc"/>
-                        <outlet property="userName" destination="akI-Q5-68R" id="bJ8-DI-E63"/>
-                        <outlet property="userNameField" destination="akI-Q5-68R" id="Y0K-q5-omO"/>
-                        <outlet property="username" destination="akI-Q5-68R" id="NB7-WU-bqI"/>
                         <outlet property="usernameField" destination="akI-Q5-68R" id="kEg-yt-65d"/>
                     </connections>
                 </viewController>
@@ -227,9 +264,7 @@
                     <navigationItem key="navigationItem" title="Quick Pic" id="0tu-KE-Rio"/>
                     <connections>
                         <outlet property="emailField" destination="3zj-vI-hDa" id="gGK-yx-4Ts"/>
-                        <outlet property="password" destination="LGN-Pz-2YV" id="nog-Z9-ycc"/>
                         <outlet property="passwordField" destination="LGN-Pz-2YV" id="5t7-IU-830"/>
-                        <outlet property="userName" destination="uTE-iN-OFj" id="2Rh-P1-gNW"/>
                         <outlet property="usernameField" destination="uTE-iN-OFj" id="K74-El-f7a"/>
                     </connections>
                 </viewController>

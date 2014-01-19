@@ -33,6 +33,8 @@
 		F50874DC1889B3980042322B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50874D31889B3980042322B /* SystemConfiguration.framework */; };
 		F50874E2188A6D390042322B /* ZDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F50874E1188A6D390042322B /* ZDLoginViewController.m */; };
 		F50874E5188A6D470042322B /* ZDSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F50874E4188A6D470042322B /* ZDSignUpViewController.m */; };
+		F50874E8188B7CCF0042322B /* ZDEditFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F50874E7188B7CCF0042322B /* ZDEditFriendsViewController.m */; };
+		F5FBF874188B9000009DC99D /* ZDFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FBF873188B9000009DC99D /* ZDFriendsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,10 @@
 		F50874E1188A6D390042322B /* ZDLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZDLoginViewController.m; path = ../ZDLoginViewController.m; sourceTree = "<group>"; };
 		F50874E3188A6D470042322B /* ZDSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZDSignUpViewController.h; path = ../ZDSignUpViewController.h; sourceTree = "<group>"; };
 		F50874E4188A6D470042322B /* ZDSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZDSignUpViewController.m; path = ../ZDSignUpViewController.m; sourceTree = "<group>"; };
+		F50874E6188B7CCF0042322B /* ZDEditFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZDEditFriendsViewController.h; path = ../ZDEditFriendsViewController.h; sourceTree = "<group>"; };
+		F50874E7188B7CCF0042322B /* ZDEditFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZDEditFriendsViewController.m; path = ../ZDEditFriendsViewController.m; sourceTree = "<group>"; };
+		F5FBF872188B9000009DC99D /* ZDFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZDFriendsViewController.h; path = ../ZDFriendsViewController.h; sourceTree = "<group>"; };
+		F5FBF873188B9000009DC99D /* ZDFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZDFriendsViewController.m; path = ../ZDFriendsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +173,10 @@
 				F50874E1188A6D390042322B /* ZDLoginViewController.m */,
 				F50874E3188A6D470042322B /* ZDSignUpViewController.h */,
 				F50874E4188A6D470042322B /* ZDSignUpViewController.m */,
+				F50874E6188B7CCF0042322B /* ZDEditFriendsViewController.h */,
+				F50874E7188B7CCF0042322B /* ZDEditFriendsViewController.m */,
+				F5FBF872188B9000009DC99D /* ZDFriendsViewController.h */,
+				F5FBF873188B9000009DC99D /* ZDFriendsViewController.m */,
 				F50874961888B6680042322B /* Images.xcassets */,
 				F508748B1888B6680042322B /* Supporting Files */,
 			);
@@ -311,7 +321,9 @@
 				F50874951888B6680042322B /* ZDAppDelegate.m in Sources */,
 				F50874911888B6680042322B /* main.m in Sources */,
 				F50874E5188A6D470042322B /* ZDSignUpViewController.m in Sources */,
+				F50874E8188B7CCF0042322B /* ZDEditFriendsViewController.m in Sources */,
 				F50874C81888C8420042322B /* InboxViewController.m in Sources */,
+				F5FBF874188B9000009DC99D /* ZDFriendsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
