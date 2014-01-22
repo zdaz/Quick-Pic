@@ -50,7 +50,7 @@
                     <navigationItem key="navigationItem" title="Friends" id="BK0-Ox-fVR">
                         <barButtonItem key="rightBarButtonItem" title="Add/Remove" id="Exx-dj-rjq">
                             <connections>
-                                <segue destination="Q14-LR-F0e" kind="push" id="NQQ-j0-rZa"/>
+                                <segue destination="Q14-LR-F0e" kind="push" identifier="showEditFriends" id="NQQ-j0-rZa"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -189,16 +189,16 @@
             </objects>
             <point key="canvasLocation" x="1678" y="-569"/>
         </scene>
-        <!--Table View Controller - Quick Pic-->
+        <!--Camera View Controller - Recipients-->
         <scene sceneID="RtT-bD-PXU">
             <objects>
-                <tableViewController id="h1v-6p-Sgo" sceneMemberID="viewController">
+                <tableViewController id="h1v-6p-Sgo" customClass="ZDCameraViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Lv5-BE-guT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="qYR-0i-tFU">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="qYR-0i-tFU">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qYR-0i-tFU" id="S15-PL-AUh">
@@ -212,7 +212,18 @@
                             <outlet property="delegate" destination="h1v-6p-Sgo" id="DqV-Rd-yJx"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Quick Pic" id="P5M-iB-D37"/>
+                    <navigationItem key="navigationItem" title="Recipients" id="P5M-iB-D37">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="EmF-YH-S2V">
+                            <connections>
+                                <action selector="cancel:" destination="h1v-6p-Sgo" id="xTR-Mj-nAW"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Send" id="UoU-t2-JwZ">
+                            <connections>
+                                <action selector="send:" destination="h1v-6p-Sgo" id="r0L-6C-ccF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oem-Ls-T7q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -7,6 +7,7 @@
 //
 
 #import "ZDFriendsViewController.h"
+#import "ZDEditFriendsViewController.h"
 
 @interface ZDFriendsViewController ()
 
@@ -19,6 +20,11 @@
 {
     [super viewDidLoad];
     self.friendsRelation = [[PFUser currentUser] objectForKey:@"friendsRelation"];
+    
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     PFQuery *query = [self.friendsRelation query];
     [query orderByAscending:@"username"];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
@@ -33,7 +39,15 @@
             
         }
     }];
-    
+
+}
+//above will add friends and remove for both screens
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"showEditFriends"]) {
+        ZDEditFriendsViewController *viewController = (ZDEditFriendsViewController *)segue.destinationViewController;
+        viewController.friends = [NSMutableArray arrayWithArray:self.friends];
+        
+    }
     
     
 }
